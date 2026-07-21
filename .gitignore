@@ -1,3 +1,87 @@
+# Tabular and serialized datasets
 *.csv
+*.tsv
 *.xls
 *.xlsx
+*.parquet
+*.feather
+*.jsonl
+*.ndjson
+*.npy
+*.npz
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.virtual_documents/
+.pytest_cache/
+.mypy_cache/
+
+# Local development environments
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+
+# Data directories
+data/
+dataset/
+datasets/
+raw_data/
+processed_data/
+
+# Model weights and generated outputs
+models/
+outputs/
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.bin
+*.onnx
+
+# Raw images and downloaded archives
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Only reviewed figures under artifacts may be published
+*.png
+!artifacts/
+!artifacts/figures/
+!artifacts/figures/*.png
+
+# Data collection and crawling code is kept locally only
+src/data_collection/
+notebooks/data_collection/
+archive/legacy/
+archive/notion/
+
+# Crawler checkpoints and transient logs
+*_완료된식당목록*.txt
+*_누락된식당목록*.txt
+*_복구완료목록*.txt
+**/completed_stores.txt
+**/not_found_stores.txt
+**/failed_stores.txt
+*.log
+
+# Local crawler downloads
+downloads/
+images/
